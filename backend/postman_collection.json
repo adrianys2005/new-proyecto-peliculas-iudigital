@@ -1,0 +1,635 @@
+{
+	"info": {
+		"_postman_id": "8b5da2d8-21d9-48fb-be8f-62e92c235b2e",
+		"name": "IUDigital Películas API REST",
+		"description": "Colección de peticiones HTTP para probar la API REST de Películas y Series de la IUDigital de Antioquia.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "General",
+			"item": [
+				{
+					"name": "Inicio / Estado de API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Géneros",
+			"item": [
+				{
+					"name": "Listar Géneros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/genres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Género",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Fantasía\",\n    \"estado\": \"Activo\",\n    \"descripcion\": \"Películas de magia, mitos y mundos mágicos\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/genres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Género Inactivo (para pruebas)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Documental Inactivo\",\n    \"estado\": \"Inactivo\",\n    \"descripcion\": \"Género documental inhabilitado para pruebas\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/genres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Género",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Fantasía Épica\",\n    \"estado\": \"Activo\",\n    \"descripcion\": \"Películas de magia medievales y mundos de fantasía\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/genres/REEMPLAZAR_ID_AQUÍ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"genres",
+								"REEMPLAZAR_ID_AQUÍ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Directores",
+			"item": [
+				{
+					"name": "Listar Directores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/directors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Director Activo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Christopher Nolan\",\n    \"estado\": \"Activo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/directors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Director Inactivo (para pruebas)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Director Retirado\",\n    \"estado\": \"Inactivo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/directors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Director",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Christopher Nolan S.\",\n    \"estado\": \"Activo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/directors/REEMPLAZAR_ID_AQUÍ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"directors",
+								"REEMPLAZAR_ID_AQUÍ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productoras",
+			"item": [
+				{
+					"name": "Listar Productoras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"producers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Productora Activa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Warner Bros.\",\n    \"estado\": \"Activo\",\n    \"slogan\": \"The Stuff That Dreams Are Made Of\",\n    \"descripcion\": \"Compañía productora y distribuidora de cine estadounidense\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"producers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Productora Inactiva (para pruebas)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Estudios Quebrados\",\n    \"estado\": \"Inactivo\",\n    \"slogan\": \"Fuimos los mejores\",\n    \"descripcion\": \"Productora que ya no opera\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"producers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Productora",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Warner Bros. Pictures\",\n    \"estado\": \"Activo\",\n    \"slogan\": \"The Stuff That Dreams Are Made Of (Modified)\",\n    \"descripcion\": \"Compañía líder en entretenimiento\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/producers/REEMPLAZAR_ID_AQUÍ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"producers",
+								"REEMPLAZAR_ID_AQUÍ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipos",
+			"item": [
+				{
+					"name": "Listar Tipos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/types",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Tipo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Documental\",\n    \"descripcion\": \"Producciones informativas basadas en hechos reales\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/types",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Tipo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Mini-Serie\",\n    \"descripcion\": \"Serie corta de menos de 10 capítulos\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/types/REEMPLAZAR_ID_AQUÍ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"types",
+								"REEMPLAZAR_ID_AQUÍ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Media (Películas y Series)",
+			"item": [
+				{
+					"name": "Listar Media",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/media",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Media (Éxito)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"serial\": \"M-001\",\n    \"titulo\": \"Interstellar\",\n    \"sinopsis\": \"Un grupo de exploradores espaciales viajan a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.\",\n    \"url\": \"https://play.iudmovies.edu.co/watch/interstellar\",\n    \"imagenPortada\": \"https://play.iudmovies.edu.co/covers/interstellar.jpg\",\n    \"anioEstreno\": 2014,\n    \"generoPrincipal\": \"REEMPLAZAR_CON_ID_GENERO_ACTIVO\",\n    \"directorPrincipal\": \"REEMPLAZAR_CON_ID_DIRECTOR_ACTIVO\",\n    \"productora\": \"REEMPLAZAR_CON_ID_PRODUCTORA_ACTIVA\",\n    \"tipo\": \"REEMPLAZAR_CON_ID_TIPO\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/media",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Media (Error por Género Inactivo)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"serial\": \"M-002\",\n    \"titulo\": \"Producción Fallida por Género\",\n    \"sinopsis\": \"Debería fallar porque el género está inactivo.\",\n    \"url\": \"https://play.iudmovies.edu.co/watch/failed-genre\",\n    \"imagenPortada\": \"\",\n    \"anioEstreno\": 2026,\n    \"generoPrincipal\": \"REEMPLAZAR_CON_ID_GENERO_INACTIVO\",\n    \"directorPrincipal\": \"REEMPLAZAR_CON_ID_DIRECTOR_ACTIVO\",\n    \"productora\": \"REEMPLAZAR_CON_ID_PRODUCTORA_ACTIVA\",\n    \"tipo\": \"REEMPLAZAR_CON_ID_TIPO\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/media",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Media (Error por Director Inactivo)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"serial\": \"M-003\",\n    \"titulo\": \"Producción Fallida por Director\",\n    \"sinopsis\": \"Debería fallar porque el director está inactivo.\",\n    \"url\": \"https://play.iudmovies.edu.co/watch/failed-director\",\n    \"imagenPortada\": \"\",\n    \"anioEstreno\": 2026,\n    \"generoPrincipal\": \"REEMPLAZAR_CON_ID_GENERO_ACTIVO\",\n    \"directorPrincipal\": \"REEMPLAZAR_CON_ID_DIRECTOR_INACTIVO\",\n    \"productora\": \"REEMPLAZAR_CON_ID_PRODUCTORA_ACTIVA\",\n    \"tipo\": \"REEMPLAZAR_CON_ID_TIPO\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/media",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Media",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\": \"Interstellar (Edición Especial)\",\n    \"sinopsis\": \"Una obra maestra de Nolan sobre la relatividad del tiempo y los lazos familiares.\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/media/REEMPLAZAR_ID_AQUÍ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"media",
+								"REEMPLAZAR_ID_AQUÍ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Media",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/media/REEMPLAZAR_ID_AQUÍ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"media",
+								"REEMPLAZAR_ID_AQUÍ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

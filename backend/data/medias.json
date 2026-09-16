@@ -1,0 +1,17 @@
+[
+  {
+    "serial": "M-101",
+    "titulo": "Jurassic Park",
+    "sinopsis": "Un parque temático de dinosaurios clonados sufre un colapso de seguridad...",
+    "url": "https://play.iudmovies.edu.co/watch/jurassic-park",
+    "imagenPortada": "https://play.iudmovies.edu.co/covers/jurassic-park.jpg",
+    "anioEstreno": 1993,
+    "generoPrincipal": "c19bce37d8c966b6f10ce524",
+    "directorPrincipal": "5789d660744aae6efc3fbcf2",
+    "productora": "b3ad95a7b27a4c6c54143968",
+    "tipo": "03e455c947e4b1f4ffa2738a",
+    "_id": "c10c16211b6fd362cf7b47e4",
+    "fechaCreacion": "2026-08-25T23:37:08.632Z",
+    "fechaActualizacion": "2026-08-25T23:37:08.632Z"
+  }
+]

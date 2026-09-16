@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Película",
+    "descripcion": "Producción audiovisual unitaria",
+    "_id": "03e455c947e4b1f4ffa2738a",
+    "fechaCreacion": "2026-08-25T23:37:06.987Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.987Z"
+  },
+  {
+    "nombre": "Serie",
+    "descripcion": "Producción audiovisual dividida en episodios o temporadas",
+    "_id": "9ce9f1ce8e5e5b556e835a34",
+    "fechaCreacion": "2026-08-25T23:37:06.987Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.987Z"
+  }
+]

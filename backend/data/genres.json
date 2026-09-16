@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Acción",
+    "estado": "Activo",
+    "descripcion": "Películas de acción y aventuras emocionantes.",
+    "_id": "c19bce37d8c966b6f10ce524",
+    "fechaCreacion": "2026-08-25T23:37:06.982Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.984Z"
+  },
+  {
+    "nombre": "Aventura",
+    "estado": "Activo",
+    "descripcion": "Viajes, exploraciones y aventuras en lugares exóticos.",
+    "_id": "5518dc74a6055e4cb2c53928",
+    "fechaCreacion": "2026-08-25T23:37:06.984Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.984Z"
+  },
+  {
+    "nombre": "Ciencia Ficción",
+    "estado": "Activo",
+    "descripcion": "Viajes espaciales, tecnología del futuro y mundos paralelos.",
+    "_id": "04841850305e487cb2d9e5c8",
+    "fechaCreacion": "2026-08-25T23:37:06.984Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.984Z"
+  },
+  {
+    "nombre": "Drama",
+    "estado": "Activo",
+    "descripcion": "Historias serias centradas en el desarrollo de personajes y conflictos emocionales.",
+    "_id": "7da54120ada95327b38b9546",
+    "fechaCreacion": "2026-08-25T23:37:06.984Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.984Z"
+  },
+  {
+    "nombre": "Terror",
+    "estado": "Activo",
+    "descripcion": "Películas diseñadas para provocar suspenso, miedo o pavor.",
+    "_id": "afc31b36cbac69d34dd7dd00",
+    "fechaCreacion": "2026-08-25T23:37:06.984Z",
+    "fechaActualizacion": "2026-08-25T23:37:06.984Z"
+  },
+  {
+    "nombre": "Documental Inactivo",
+    "estado": "Inactivo",
+    "descripcion": "Género inactivo para pruebas de validación",
+    "_id": "61a2dcb4809256cd6e89037b",
+    "fechaCreacion": "2026-08-25T23:37:08.504Z",
+    "fechaActualizacion": "2026-08-25T23:37:08.504Z"
+  }
+]
